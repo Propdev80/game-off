@@ -1,16 +1,20 @@
 class_name Root extends Node2D
 
+# Signals
+
+signal newRoom
+
 # Variables
 
-@export var currentRoom : Node2D
+@export var currentRoom : Room
 
 # Functions
 
 func switchRoom(room : String):
 	# Creates an instance of the new room
-	var r = load(room).instantiate()
-	
+	var r : Room = load(room).instantiate()
 	# Switches the old room with "r"
 	call_deferred("add_child", r)
 	call_deferred("remove_child", currentRoom)
 	currentRoom = r
+	newRoom.emit()

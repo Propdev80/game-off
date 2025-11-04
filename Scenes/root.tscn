@@ -14,5 +14,6 @@ currentRoom = NodePath("TestingZone")
 [node name="Sineling" parent="." instance=ExtResource("4_c3mwy")]
 position = Vector2(210, 96)
 
-[node name="Player" parent="." instance=ExtResource("1_i04dx")]
+[node name="Player" parent="." node_paths=PackedStringArray("r") instance=ExtResource("1_i04dx")]
 position = Vector2(162, 90)
+r = NodePath("..")

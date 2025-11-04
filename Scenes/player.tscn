@@ -17,8 +17,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fkybt"]
 size = Vector2(16, 16)
 
-[node name="Player" type="CharacterBody2D"]
-position = Vector2(1, 0)
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+z_index = 10
 script = ExtResource("1_cvnsp")
 
 [node name="PlayerSprites" type="AnimatedSprite2D" parent="."]

@@ -7,6 +7,7 @@
 size = Vector2(12, 12)
 
 [node name="Sineling" type="CharacterBody2D"]
+z_index = 10
 script = ExtResource("1_tmsrk")
 
 [node name="Player" type="Sprite2D" parent="."]

@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bo608hp5br7lh"]
+[gd_scene load_steps=4 format=3 uid="uid://bo608hp5br7lh"]
 
 [ext_resource type="PackedScene" uid="uid://ylr44jqiknlw" path="res://Scenes/teleport_area.tscn" id="1_sdo2g"]
+[ext_resource type="Script" uid="uid://rf41hqla0l0" path="res://Scripts/room.gd" id="1_xyh6x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xyh6x"]
 
 [node name="testing2" type="Node2D"]
+script = ExtResource("1_xyh6x")
+startPosition = Vector2(150, 150)
+metadata/_custom_type_script = "uid://rf41hqla0l0"
 
 [node name="Label" type="Label" parent="."]
 offset_right = 124.0
