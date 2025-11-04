@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo608hp5br7lh"]
+
+[ext_resource type="PackedScene" uid="uid://ylr44jqiknlw" path="res://Scenes/teleport_area.tscn" id="1_sdo2g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xyh6x"]
+
+[node name="testing2" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 124.0
+offset_bottom = 23.0
+text = "222222222"
+
+[node name="teleportArea" parent="." instance=ExtResource("1_sdo2g")]
+position = Vector2(312, 7)
+newRoom = "res://Scenes/testing_zone.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="teleportArea"]
+shape = SubResource("CircleShape2D_xyh6x")
