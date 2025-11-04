@@ -15,10 +15,6 @@ run/main_scene="uid://5ye2ave3v7tf"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://Assets/Sprites/icon.svg"
 
-[autoload]
-
-Rooms="*res://Scripts/rooms.gd"
-
 [display]
 
 window/size/viewport_width=320
@@ -71,4 +67,3 @@ kDeny={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-2d/snap/snap_2d_transforms_to_pixel=true

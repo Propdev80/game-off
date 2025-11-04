@@ -4,7 +4,11 @@ extends Area2D
 
 @export var newRoom : String
 
-func _on_body_entered(_body: CharacterBody2D) -> void:
-	# Gets the "root" node
-	var p : Root = get_parent().get_parent()
-	p.switchRoom(newRoom)
+# Functions
+
+func _on_body_entered(body: CharacterBody2D) -> void:
+	if body.is_in_group("Player"):
+		# Gets the "root" node
+		var p : Root = get_parent().get_parent()
+		# Switches the room to "Newroom"
+		p.switchRoom(newRoom)
