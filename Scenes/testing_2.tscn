@@ -8,6 +8,7 @@
 [node name="testing2" type="Node2D"]
 script = ExtResource("1_xyh6x")
 startPosition = Vector2(150, 150)
+CameraMode = "Static"
 metadata/_custom_type_script = "uid://rf41hqla0l0"
 
 [node name="Label" type="Label" parent="."]

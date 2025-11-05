@@ -10,6 +10,9 @@ signal newRoom
 
 # Functions
 
+func _ready() -> void:
+	newRoom.emit()
+
 func switchRoom(room : String):
 	# Creates an instance of the new room
 	var r : Room = load(room).instantiate()
