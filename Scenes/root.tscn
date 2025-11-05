@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://5ye2ave3v7tf"]
+[gd_scene load_steps=8 format=3 uid="uid://5ye2ave3v7tf"]
 
 [ext_resource type="PackedScene" uid="uid://besth6obttlt0" path="res://Scenes/player.tscn" id="1_i04dx"]
 [ext_resource type="Script" uid="uid://ujee5w4c26mh" path="res://Scripts/root.gd" id="1_vnucn"]
@@ -6,13 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://dguxm65hcsxgj" path="res://Scenes/sineling.tscn" id="4_c3mwy"]
 [ext_resource type="PackedScene" uid="uid://xfjvqfb1l653" path="res://Scenes/camera.tscn" id="5_ckhy6"]
 [ext_resource type="Script" uid="uid://s7dxptt50y6a" path="res://Scripts/camera.gd" id="6_dun2r"]
+[ext_resource type="PackedScene" uid="uid://c5ok7ou0prih1" path="res://Scenes/ui.tscn" id="7_dun2r"]
 
 [node name="Root" type="Node2D" node_paths=PackedStringArray("currentRoom")]
 script = ExtResource("1_vnucn")
 currentRoom = NodePath("TestingZone")
 
 [node name="TestingZone" parent="." instance=ExtResource("2_8pvmw")]
-CameraMode = "Player"
 
 [node name="Sineling" parent="." instance=ExtResource("4_c3mwy")]
 position = Vector2(210, 96)
@@ -27,3 +27,5 @@ editor_draw_limits = true
 script = ExtResource("6_dun2r")
 r = NodePath("..")
 p = NodePath("../Player")
+
+[node name="UI" parent="." instance=ExtResource("7_dun2r")]

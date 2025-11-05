@@ -18,6 +18,7 @@ config/icon="res://Assets/Sprites/icon.svg"
 [autoload]
 
 Global="*res://Scripts/Global.gd"
+BeatManager="*res://Scenes/beat_manager.tscn"
 
 [display]
 
